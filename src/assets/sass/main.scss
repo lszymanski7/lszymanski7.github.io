@@ -1,0 +1,35 @@
+// ================================================================================================
+// Imports
+// ================================================================================================
+
+// The order in which the files should be imported.
+
+// 1. Abstracts
+// 2. Vendors
+// 3. Base
+// 4. Layout
+// 5. Components
+// 6. Pages
+// 7. Themes
+
+@charset 'utf-8';
+
+@import 
+  './abstracts/functions',
+  './abstracts/mixins',
+  './abstracts/placeholders',
+  './abstracts/variables';
+
+@import 
+  './base/animations',
+  './base/base',
+  './base/reset',
+  './base/typography';
+
+@import 
+  './layout/footer',
+  './layout/fullscreen',
+  './layout/header';
+
+@import 
+  './pages/home';
