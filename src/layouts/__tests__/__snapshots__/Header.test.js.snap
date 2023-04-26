@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should be rendered correctly. 1`] = `
+<div>
+  <header
+    class="header"
+  >
+    <img
+      alt="Waves"
+      src="waves.svg"
+    />
+  </header>
+</div>
+`;
