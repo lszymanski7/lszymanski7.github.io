@@ -3,10 +3,9 @@ module.exports = {
         '<rootDir>/src/app/**/*.[jt]s?(x)',
         '<rootDir>/src/components/**/*.[jt]s?(x)',
         '<rootDir>/src/contexts/**/*.[jt]s?(x)',
-        '<rootDir>/src/features/**/*.[jt]s?(x)',
         '<rootDir>/src/hooks/**/*.[jt]s?(x)',
         '<rootDir>/src/layouts/**/*.[jt]s?(x)',
-        '<rootDir>/src/pages/**/*.[jt]s?(x)',
+        '<rootDir>/src/sections/**/*.[jt]s?(x)',
         '<rootDir>/src/utils/**/*.[jt]s?(x)'
     ],
     coverageDirectory: '<rootDir>/coverage',
