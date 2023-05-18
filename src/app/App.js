@@ -1,14 +1,18 @@
 import React from 'react'
-import Footer from '../layouts/Footer'
-import Header from '../layouts/Header'
-import Home from '../pages/Home'
+import Home from '../sections/Home'
+import About from '../sections/About'
+import Skills from '../sections/Skills'
+import Portfolio from '../sections/Portfolio'
+import Contact from '../sections/Contact'
 
 const App = () => {
     return (
         <div className="fullscreen">
-            <Header />
             <Home />
-            <Footer />
+            <About />
+            <Skills />
+            <Portfolio />
+            <Contact />
         </div>
     )
 }
