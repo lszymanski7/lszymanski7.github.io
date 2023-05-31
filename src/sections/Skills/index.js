@@ -8,4 +8,4 @@ const Skills = () => {
     )
 }
 
-export { Skills as default }
+export default Skills

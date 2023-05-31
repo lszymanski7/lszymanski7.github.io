@@ -2,19 +2,21 @@ import React from 'react'
 import Home from '../sections/Home'
 import About from '../sections/About'
 import Skills from '../sections/Skills'
-import Portfolio from '../sections/Portfolio'
+import Projects from '../sections/Projects'
 import Contact from '../sections/Contact'
+import GlobalStyle from '../styles/globalStyle'
 
 const App = () => {
     return (
         <div className="fullscreen">
+            <GlobalStyle />
             <Home />
             <About />
             <Skills />
-            <Portfolio />
+            <Projects />
             <Contact />
         </div>
     )
 }
 
-export { App as default }
+export default App

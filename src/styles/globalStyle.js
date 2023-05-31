@@ -1,8 +1,21 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
+  // Default styles
 
-  // Reset default margin to 0
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  // Reset styles
+  
   body,
   h1,
   h2,
@@ -14,6 +27,16 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
   }
 
+  // Typography styles
+  
+  body {
+    color: black;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-size: 1.6rem;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 `
 
 export default GlobalStyle
