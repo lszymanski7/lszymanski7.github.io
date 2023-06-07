@@ -1,10 +1,11 @@
 import React from 'react'
+import Section from '../../components/Section'
 
 const Home = () => {
     return (
-        <div>
+        <Section>
             Home Section!
-        </div>
+        </Section>
     )
 }
 

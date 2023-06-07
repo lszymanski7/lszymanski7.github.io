@@ -1,10 +1,11 @@
 import React from 'react'
+import Section from '../../components/Section'
 
 const Projects = () => {
     return (
-        <div>
+        <Section>
             Projects Section!
-        </div>
+        </Section>
     )
 }
 
