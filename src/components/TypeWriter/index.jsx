@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 
-// Function ➞
+// Function ➞ creates nice typewriter effect
 const TypeWriter = ({ backDelay, backSpeed, cursor, loop, text, typeDelay, typeSpeed }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [currentText, setCurrentText] = useState('')
@@ -35,11 +35,11 @@ const TypeWriter = ({ backDelay, backSpeed, cursor, loop, text, typeDelay, typeS
 
     if (loop === false && currentIndex + 1 === array.length) {
       return
-    } else {
-      setTimeout(() => {
-        setCurrentText(array[currentIndex].substring(-currentText.length, currentText.length - 1))
-      }, backSpeed)
     }
+
+    setTimeout(() => {
+      setCurrentText(array[currentIndex].substring(-currentText.length, currentText.length - 1))
+    }, backSpeed)
   }
 
   useEffect(() => {
