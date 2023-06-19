@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
+import { StyledContainer, StyledCursor, StyledText } from './style'
 
-// Function ➞ creates nice typewriter effect
+// Function ➞ creates a nice typewriter effect
 const TypeWriter = ({ backDelay, backSpeed, cursor, loop, text, typeDelay, typeSpeed }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [currentText, setCurrentText] = useState('')
@@ -57,10 +58,10 @@ const TypeWriter = ({ backDelay, backSpeed, cursor, loop, text, typeDelay, typeS
   })
 
   return (
-    <div>
-      <span>{currentText}</span>
-      <span>{cursor && '|'}</span>
-    </div>
+    <StyledContainer>
+      <StyledText>{currentText}</StyledText>
+      {cursor && <StyledCursor>{'|'}</StyledCursor>}
+    </StyledContainer>
   )
 }
 
@@ -75,11 +76,11 @@ TypeWriter.propTypes = {
 }
 
 TypeWriter.defaultProps = {
-  backDelay: 1000,
+  backDelay: 1500,
   backSpeed: 50,
   cursor: true,
   loop: false,
-  typeDelay: 0,
+  typeDelay: 500,
   typeSpeed: 80
 }
 
