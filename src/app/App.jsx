@@ -1,11 +1,13 @@
 import React from 'react'
+import styled from 'styled-components'
+import Header from '../layouts/Header'
 import Home from '../sections/Home'
 import About from '../sections/About'
 import Skills from '../sections/Skills'
 import Projects from '../sections/Projects'
 import Contact from '../sections/Contact'
+import FontStyle from '../styles/fontStyle'
 import GlobalStyle from '../styles/globalStyle'
-import styled from 'styled-components'
 
 const Container = styled.div`
   height: 100vh;
@@ -21,7 +23,9 @@ const Container = styled.div`
 const App = () => {
   return (
     <Container>
+      <FontStyle />
       <GlobalStyle />
+      <Header />
       <Home />
       <About />
       <Skills />

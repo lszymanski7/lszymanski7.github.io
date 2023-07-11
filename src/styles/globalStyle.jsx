@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
   
   body {
     color: black;
-    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-family: 'Montserrat', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     font-size: 1.6rem;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
